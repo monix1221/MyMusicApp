@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.musicplayer.MarketActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:padding="@dimen/medium_padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/explain_market"
+        android:background="@color/colorAccent" />
+
+    <TextView
+        android:padding="@dimen/medium_padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/market_explain_library"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="@dimen/medium_padding"/>
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="song_title">24sp</dimen>
+    <dimen name="song_author">20sp</dimen>
+    <dimen name="play_icon_big">68dp</dimen>
+    <dimen name="medium_padding">24dp</dimen>
+    <dimen name="small_padding">8dp</dimen>
+    <dimen name="album_cover_size">200dp</dimen>
+    <dimen name="min_high_buttons">60dp</dimen>
+
+
+</resources>

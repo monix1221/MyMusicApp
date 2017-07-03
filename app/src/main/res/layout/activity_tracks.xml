@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.musicplayer.MarketActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:padding="@dimen/medium_padding"
+        android:text="@string/explain_tracks" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/album_cover_size"
+        android:src="@drawable/placebo_goodbye_cover" />
+
+    <TextView
+        android:id="@+id/song_title"
+        style="@style/main_song_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/small_padding"
+        android:text="@string/song_to_say_goodbye"
+        android:textSize="@dimen/song_title" />
+
+    <TextView
+        android:id="@+id/song_author"
+        style="@style/main_song_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/small_padding"
+        android:text="@string/placebo"
+        android:textSize="@dimen/song_author" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_stop_black_36" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_fast_rewind_black_36" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_play_circle_outline_black_36" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_fast_forward_black_36" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_favorite_border_black_36" />
+    </LinearLayout>
+</LinearLayout>

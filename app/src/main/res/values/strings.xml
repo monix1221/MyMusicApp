@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">My Music</string>
+    <string name="tracks">Tracks</string>
+    <string name="favourites">Loved</string>
+    <string name="playlist">Playlist</string>
+    <string name="market">Market</string>
+    <string name="settings">Settings</string>
+    <string name="home">Home</string>
+    <string name="explain_loved">The activity wil contiain the list of tracks which user marked as Loved. The tracks will be displayed in a grid view with album covers and song titles. Album covers will be clickable, and the user may listen to the music when click on the album cover</string>
+    <string name="explain_market">In this activity the user may choose the shop and buy the album or a single from artists he already listens to, or he may search for any artists he wants. </string>
+    <string name="explain_playlist">Playlist will contain a list view of user\'s playlist. When in the playlist, a user may choose which playlist to play or he may create, delete and add new playlist</string>
+    <string name="explain_tracks">Tracks will contain a list view of all user\'s tracks. On click, the track will play. It is possible to add here another menu, so the user can group tracks by album, author, singer, etc</string>
+    <string name="placebo">Placebo</string>
+    <string name="song_to_say_goodbye">Song to say Goodbye</string>
+    <string name="market_explain_library">In the market, I would use the following library: https://github.com/anjlab/android-inapp-billing-v3\n First, I would add repository and dependency in build.gradle, then add permision in Android Manifest. I would also create license key from Google Play. Then I would apply payment function to my app, by following the instructions in the github repository. I would copy and override some neccessary code from the library</string>
+</resources>

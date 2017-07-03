@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="main"
+            type="com.example.android.musicplayer.MainActivity" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primary_light"
+        android:fillViewport="true"
+        tools:context="com.example.android.musicplayer.MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/album_cover_size"
+                android:src="@drawable/placebo_goodbye_cover" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/small_padding">
+
+                <TextView
+                    android:id="@+id/song_title"
+                    style="@style/main_song_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/small_padding"
+                    android:text="@string/song_to_say_goodbye"
+                    android:textSize="@dimen/song_title" />
+
+                <TextView
+                    android:id="@+id/song_author"
+                    style="@style/main_song_author"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/song_title"
+                    android:padding="@dimen/small_padding"
+                    android:text="@string/placebo"
+                    android:textSize="@dimen/song_author" />
+
+                <Button
+                    android:id="@+id/play_music_button"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="@dimen/play_icon_big"
+                    android:layout_height="@dimen/play_icon_big"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="@dimen/small_padding"
+                    android:drawableRight="@drawable/ic_play_circle_outline_black_48dp_fotor" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/divider"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/tracks_button"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/ic_track_changes_black_48dp"
+                    android:minHeight="@dimen/min_high_buttons"
+                    android:text="@string/tracks" />
+
+                <Button
+                    android:id="@+id/loved_button"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/ic_favorite_border_black_48dp"
+                    android:minHeight="@dimen/min_high_buttons"
+                    android:text="@string/favourites" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/divider"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/playlist_button"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/ic_audiotrack_black_48dp"
+                    android:minHeight="@dimen/min_high_buttons"
+                    android:text="@string/playlist" />
+
+                <Button
+                    android:id="@+id/market_button"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/ic_shop_two_black_48dp"
+                    android:minHeight="@dimen/min_high_buttons"
+                    android:text="@string/market" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</layout>
